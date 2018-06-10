@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/uname"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:text="yxf"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/exit"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0000FF"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="退出"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/music"
+            android:id="@+id/imageView3" />
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floating_btn_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/top"
+            android:elevation="10dp"
+            android:layout_margin="15dp"/>
+
+        <ListView
+            android:id="@+id/news_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</LinearLayout>

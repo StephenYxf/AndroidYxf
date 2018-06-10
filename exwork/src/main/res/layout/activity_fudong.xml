@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test">
+
+
+
+    <LinearLayout
+        android:gravity="right"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/exitfudong"
+            android:layout_width="35dp"
+            android:text="✖"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:background="@android:color/transparent"
+            android:textSize="25sp"
+            android:layout_height="wrap_content" />
+        //按钮透明transparent
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/fudongtitle"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_width="300dp"
+            android:text="标题标题标题标题标题标题标题标题"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="right"
+            android:id="@+id/fudongThemetype"
+            android:textSize="18sp"
+            android:layout_marginRight="3dp"
+            android:layout_width="300dp"
+            android:text="新闻类型"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fudongimgContent"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/fudongcontent"
+            android:textSize="18sp"
+            android:layout_width="270dp"
+            android:text="123312312312123123"
+
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="right"
+            android:id="@+id/fudongCreateTime"
+            android:textSize="18sp"
+            android:layout_width="270dp"
+            android:text="2015-2-1 18:00:00"
+
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
