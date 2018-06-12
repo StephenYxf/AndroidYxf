@@ -58,14 +58,12 @@ public class NewsAdapter extends ArrayAdapter<News> {
             holder.newsImage.setImageBitmap(map.get(imgUrl));
         }else{
             final ViewHolder finalHolder = holder;
+            //Log.d("imgUrl",imgUrl);
             new ImageTask(new ImageTask.CallBack() {
                 @Override
                 public void getData(Bitmap pic) {
-                    Log.i("newsAdapter",pic.toString());
-                    Log.i("newsAdapterURL",imgUrl.toString());
                     finalHolder.newsImage.setImageBitmap(pic);
                     map.put(imgUrl,pic);
-
                 }
             }).execute(imgUrl);
         }

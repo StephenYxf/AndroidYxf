@@ -17,15 +17,30 @@
             android:layout_height="30dp" />
     </LinearLayout>
     <LinearLayout
+        android:gravity="center"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:text="那些你很冒险的梦"
-            android:textSize="26sp"
+        <Button
+            android:text="1.那些你很冒险的梦"
+            android:id="@+id/music1"
+            android:onClick="OnType"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="OnType"
+            android:id="@+id/music2"
+            android:text="     2.挥着翅膀的女孩"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="OnType"
+            android:id="@+id/music3"
+            android:text="3.OAOA"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
@@ -33,6 +48,7 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <pl.droidsonroids.gif.GifImageView
             android:layout_marginTop="20dp"
             android:layout_width="250dp"

@@ -20,6 +20,7 @@ public class JSONParser {
         ArrayList<News> result = new ArrayList<News>();
         try {
             JSONObject object1 = new JSONObject(data);
+
             JSONArray jsonArray1 = object1.getJSONArray("data");
             for(int i = 0 ; i <jsonArray1.length();i++){
                 JSONObject object3 = jsonArray1.getJSONObject(i);
